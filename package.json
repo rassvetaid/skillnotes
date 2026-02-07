@@ -9,7 +9,7 @@
     "start": "node index.mjs",
     "dev": "cross-env npm run build && nodemon index.mjs -e js,mjs,cjs,njk",
     "test": "echo \"Tests passed\" && exit 0",
-    "build": "rimraf public/bundle.* && rollup --config"
+    "build": "rm -rf public/bundle.* && rollup --config"
   },
   "engines": {
     "node": "=12.x || =14.x || =15.x || =22.x"
